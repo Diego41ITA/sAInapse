@@ -86,3 +86,4 @@ def rabbithole_instantiates_splitter(text_splitter, cat):
     text_splitter._chunk_size = settings["chunk_size"]
     text_splitter._chunk_overlap = settings["chunk_overlap"]
     return text_splitter
+

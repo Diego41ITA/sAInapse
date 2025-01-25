@@ -1,0 +1,8 @@
+{
+    "name": "sAInapse - a tool that specializes the cat for EEG data analysis",
+    "version": "0.0.1",
+    "description": "This plugin recognizes the user's request to locally run different computation referred to EEG data analysis and execute the desired pipeline",
+    "author_name": "Diego Quattrone & Francesco Vichi",
+    "author_url": "",
+    "tags": "prompt analysis, user intent recognition, code execution, advanced"
+}
