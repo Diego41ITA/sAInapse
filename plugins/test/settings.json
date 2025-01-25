@@ -1,0 +1,12 @@
+{
+    "episodic_memory_k": 0,
+    "episodic_memory_threshold": 0.7,
+    "declarative_memory_k": 10,
+    "declarative_memory_threshold": 0.8,
+    "procedural_memory_k": 3,
+    "procedural_memory_threshold": 0.7,
+    "user_name": "Human",
+    "language": "English",
+    "chunk_size": 256,
+    "chunk_overlap": 64
+}

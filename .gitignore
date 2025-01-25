@@ -1,1 +1,5 @@
 data/models/fast_embed/fast-bge-base-en/model_optimized.onnx
+data/local_vector_memory/collection/declarative/storage.sqlite
+data/local_vector_memory/collection/episodic/storage.sqlite
+data/local_vector_memory/collection/procedural/storage.sqlite
+
