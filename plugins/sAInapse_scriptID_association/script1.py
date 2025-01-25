@@ -25,4 +25,4 @@ def first_visualization():
 
 # Execute the create_file function only when this file is executed directly
 if __name__ == "__main__":
-    first_visualization()
+    create_file()
