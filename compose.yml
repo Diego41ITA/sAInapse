@@ -10,3 +10,4 @@ services:
       - ./static:/app/cat/static
       - ./plugins:/app/cat/plugins
       - ./data:/app/cat/data
+      - C:/Users/diego/Desktop/Scripts:/app/cat/data/scripts
