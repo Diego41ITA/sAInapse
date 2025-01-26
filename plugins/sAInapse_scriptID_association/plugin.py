@@ -203,7 +203,8 @@ def test_tool(tool_input, cat):
     # association prompt
     prompt = f"""You are ONLY specialized in ONE task. You need to perform a scriptID association beetween the user request
                  and the documentation provided later. You need to answer ONLY with the taskID that you find in the documentation provided. 
-                 I don't want complex answers, just the taskID. If you don't find any taskID, answer 'no' in lower case.
+                 I don't want complex answers, just the taskID. If you don't find any taskID, answer 'no' in lower case. You will find the scriptID
+                 to pick before every corresponding explanation of the task.
                 User request -> {tool_input}.
                 documentation -> {content}.
                 """

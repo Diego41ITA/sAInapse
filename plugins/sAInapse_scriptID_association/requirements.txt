@@ -4,3 +4,5 @@ numpy
 scipy
 seaborn
 PyPDF2
+tensorflow
+scikit-learn
