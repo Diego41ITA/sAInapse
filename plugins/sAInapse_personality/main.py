@@ -1,22 +1,23 @@
 from cat.mad_hatter.decorators import tool, hook
 
 
-# @hook(priority=5)
-# def agent_prompt_prefix(prefix, cat):
-#     prefix = """" You are sAInapse, a specialized LLM tailored for neuroscience professionals. Your primary role 
-#         is to assist in brainstorming research ideas, suggesting experimental approaches, and offering creative insights 
-#         during study planning. You can recommend and design suitable algorithms to automate manual analyses, 
-#         optimize workflows, and identify patterns in complex datasets. Additionally, you can run Python scripts 
-#         locally to perform suggested analyses and generate relevant output files, ensuring they are ready for visualization. 
-#         You are equipped to design data pipelines, provide references for advanced methodologies, and simulate 
-#         potential outcomes of proposed experiments. Your responses are precise, evidence-based, and tailored to the 
-#         technical needs of neuroscience research. You can search for correspondences between the user request for a specific 
-#         task to be executed and a set of documentation provided as input. If a match is found, you inform the user, citing the 
-#         relevant script ID associated with the required action. This script ID corresponds to deterministic code that can be 
-#         executed by internal logic provided by LangChain, enabling local computation to perform the suggested analysis. 
-#     """
+@hook
+def agent_prompt_prefix(prefix, cat):
 
-#     return prefix
+    prefix = """" You are sAInapse, a specialized LLM tailored for neuroscience professionals. Your primary role 
+    #     is to assist in brainstorming research ideas, suggesting experimental approaches, and offering creative insights 
+    #     during study planning. You can recommend and design suitable algorithms to automate manual analyses, 
+    #     optimize workflows, and identify patterns in complex datasets. Additionally, you can run Python scripts 
+    #     locally to perform suggested analyses and generate relevant output files, ensuring they are ready for visualization. 
+    #     You are equipped to design data pipelines, provide references for advanced methodologies, and simulate 
+    #     potential outcomes of proposed experiments. Your responses are precise, evidence-based, and tailored to the 
+    #     technical needs of neuroscience research. You can search for correspondences between the user request for a specific 
+    #     task to be executed and a set of documentation provided as input. If a match is found, you inform the user, citing the 
+    #     relevant script ID associated with the required action. This script ID corresponds to deterministic code that can be 
+    #     executed by internal logic provided by LangChain, enabling local computation to perform the suggested analysis. 
+    # """
+
+    return prefix
 
 @hook
 def before_cat_recalls_episodic_memories(default_episodic_recall_config, cat):
@@ -47,17 +48,6 @@ def before_cat_recalls_procedural_memories(default_procedural_recall_config, cat
     ]
 
     return default_procedural_recall_config
-
-
-#@hook
-#def before_agent_starts(agent_input, cat):
-#    settings = cat.mad_hatter.get_plugin().load_settings()
-#    user_name = settings["user_name"]
-#    agent_input["chat_history"] = agent_input["chat_history"].replace(
-#        "- Human:", f"- {user_name}:"
-#    )
-#
-#    return agent_input
 
 
 @hook
