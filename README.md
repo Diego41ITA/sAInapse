@@ -4,7 +4,7 @@ This repository contains the implementation of a plugin for the [Cheshire Cat AI
 
 ---
 
-## 🌍 About the Tool  
+## 🌍 About the Plugin
 This plugin is designed to assist researchers in neuroscientific studies by utilizing a powerful Large Language Model (LLM). Its features include:  
 - **Data analysis:** Facilitating the interpretation of complex neuroscientific datasets.  
 - **Research Assistance:** Providing contextual information and generating scientific insights.  
