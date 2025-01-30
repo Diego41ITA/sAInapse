@@ -27,7 +27,7 @@ To use this plugin, follow these steps:
 ---
 
 ## 🚀 Usage
-Once the Docker container is running, connect to the Cheshire Cat AI framework and use the plugin to assist in research tasks. Detailed documentation for specific commands and examples will be added soon.
+Once the Docker container is running, connect to the Cheshire Cat AI framework and use the plugin to assist in research tasks. Detailed documentation for specific commands and examples will be added soon. Remember that the framework is LLM agnostic (and so is sAInapse), so you can choose whatever model and embedder you want to use.
 
 ---
 
