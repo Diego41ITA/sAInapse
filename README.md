@@ -1,6 +1,6 @@
 # sAInapse - an AI agent tailored for biomedical data analysis  
 
-This repository contains the implementation of a plugin for the [Cheshire Cat AI framework](https://www.cheshirecatai.com/). This framework leverages cutting-edge AI technologies to support complex computational tasks within neuroscience and other research domains.  
+This repository contains the implementation of a plugin for the [Cheshire Cat AI framework](https://cheshirecat.ai/). This framework leverages cutting-edge AI technologies to support complex computational tasks within neuroscience and other research domains.  
 
 ---
 
