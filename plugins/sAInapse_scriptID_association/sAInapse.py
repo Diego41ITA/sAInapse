@@ -19,6 +19,24 @@ def extract_text_from_pdf(file_path):
         text += page.extract_text()
     return text
 
+@hook
+def agent_prompt_prefix(prefix, cat):
+
+    prefix = """" You are sAInapse, a specialized LLM tailored for neuroscience professionals. Your primary role 
+    #     is to assist in brainstorming research ideas, suggesting experimental approaches, and offering creative insights 
+    #     during study planning. You can recommend and design suitable algorithms to automate manual analyses, 
+    #     optimize workflows, and identify patterns in complex datasets. Additionally, you can run Python scripts 
+    #     locally to perform suggested analyses and generate relevant output files, ensuring they are ready for visualization. 
+    #     You are equipped to design data pipelines, provide references for advanced methodologies, and simulate 
+    #     potential outcomes of proposed experiments. Your responses are precise, evidence-based, and tailored to the 
+    #     technical needs of neuroscience research. You can search for correspondences between the user request for a specific 
+    #     task to be executed and a set of documentation provided as input. If a match is found, you inform the user, citing the 
+    #     relevant script ID associated with the required action. This script ID corresponds to deterministic code that can be 
+    #     executed by internal logic provided by LangChain, enabling local computation to perform the suggested analysis. 
+    # """
+
+    return prefix
+
 
 @tool(return_direct=True)
 def test_tool(tool_input, cat):
@@ -28,7 +46,7 @@ def test_tool(tool_input, cat):
     """
 
     # Load the PDF and extract content
-    pdf_path = "/app/cat/data/scripts_docs/scripts_doc.pdf"
+    pdf_path = "/scripts_docs/scripts_doc.pdf"
     content = extract_text_from_pdf(pdf_path)
 
     # association prompt
